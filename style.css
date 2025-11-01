@@ -1,0 +1,100 @@
+/* ======= DARK BACKGROUND + LIGHT BOX THEME ======= */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b); /* dark navy tech bg */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* ======= Main Container ======= */
+.container {
+  background: linear-gradient(135deg, #e3f2fd, #ffffff); /* light blue-white box */
+  color: #1e293b;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.4);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+/* ======= Heading ======= */
+h1 {
+  font-size: 34px;
+  font-weight: 800;
+  color: #0078ff;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 25px;
+  text-shadow: 0 0 8px rgba(0, 120, 255, 0.3);
+}
+
+/* ======= Textarea ======= */
+textarea {
+  width: 100%;
+  height: 120px;
+  border-radius: 10px;
+  border: 2px solid #0078ff;
+  padding: 12px;
+  font-size: 16px;
+  resize: none;
+  margin-bottom: 20px;
+  background-color: #f0f7ff; /* pastel blue area */
+  color: #000;
+  outline: none;
+  transition: 0.3s;
+}
+
+textarea:focus {
+  box-shadow: 0 0 12px rgba(0, 120, 255, 0.4);
+}
+
+/* ======= Button ======= */
+button {
+  background: linear-gradient(135deg, #0078ff, #00c6ff);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 28px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 120, 255, 0.4);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #00c6ff, #0078ff);
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.7);
+  transform: scale(1.05);
+}
+
+/* ======= Result Text ======= */
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0078ff;
+}
+
+/* ======= Confidence Bar ======= */
+.confidence-bar {
+  height: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #cbd5e1;
+  overflow: hidden;
+  border: 1px solid rgba(0, 120, 255, 0.3);
+}
+
+.confidence-fill {
+  height: 100%;
+  border-radius: 10px;
+  background-color: #0078ff;
+  transition: width 0.5s ease;
+}
